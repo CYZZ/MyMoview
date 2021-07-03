@@ -196,6 +196,7 @@
 				65F3BB432676296E0071A673 /* Sources */,
 				65F3BB442676296E0071A673 /* Frameworks */,
 				65F3BB452676296E0071A673 /* Resources */,
+				4C190396CBA2EE78626DFC0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,6 +332,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMoviewTests/Pods-MyMoviewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C190396CBA2EE78626DFC0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMoview/Pods-MyMoview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMoview/Pods-MyMoview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMoview/Pods-MyMoview-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		54A6BA323AC7613DBBF2B2DD /* [CP] Embed Pods Frameworks */ = {
@@ -609,7 +627,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = BUSLFV36ZF;
 				INFOPLIST_FILE = MyMoview/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -632,7 +650,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = BUSLFV36ZF;
 				INFOPLIST_FILE = MyMoview/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
