@@ -83,11 +83,11 @@ class MoviesTableViewController: UITableViewController {
 
 extension MoviesTableViewController {
 	@objc fileprivate func loginButtonClick() {
-		print("开始登录账号")
+		print("开始登录账号---1")
 	}
 	
 	@objc fileprivate func registerButtonClick() {
-		print("要注册新账号")
+		print("要注册新账号---2")
 	}
 }
 
