@@ -76,6 +76,8 @@ class MoviesTableViewController: UITableViewController {
 	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		print("didSelectRowAt \(indexPath.row)")
+		
+		present(PersonViewController(), animated: true, completion: nil)
 		tableView.deselectRow(at: indexPath, animated: true)
 	}
 

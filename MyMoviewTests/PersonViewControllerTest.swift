@@ -26,6 +26,14 @@ class PersonViewControllerTest: QuickSpec {
 					expect(viewController.didCallViewDidLoad).to(beTrue())
 				}
 			}
+			context("present") {
+				it(" history") { 
+					viewController.present(HistoryViewController(), animated: false, completion: nil)
+				}
+				it("cache") { 
+					viewController.present(CacheViewController(), animated: false, completion: nil)
+				}
+			}
 			
 			context("notification event") { 
 				it("post name is 'LoginSuccessKey'") { 
@@ -46,29 +54,26 @@ class PersonViewControllerTest: QuickSpec {
 						toastView?.closeButton.sendActions(for: .touchUpInside)
 					}
 					expect(toastView).toNotEventually(beNil(), timeout: .seconds(2), pollInterval: .milliseconds(200), description: nil)
-//					expect(toastView).toNot(beNil())
-					
-//					print("----1----")
-//					waitUntil(timeout: .seconds(5)) { done in
-//						print("----2----")
-//						var toastView:MyToastView?
-//						for view in viewController.view.subviews {
-//							if let toastV = view as? MyToastView {
-//								toastView = toastV
-//								break
-//							}
-//						}
-//						toastView?.closeButton.sendActions(for: .touchUpInside)
-//						print("toastView = \(toastView)")
-//						done()
-//					}
-//					print("----3----")
-//					waiuti
-					
-//					expect(viewController.view).toEventually(<#T##matcher: Matcher##Matcher#>)
+
 				}
 			}
 		}
 	}
 
+}
+
+
+fileprivate extension CacheViewController {
+
+//	fileprivate override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+//		super.present(viewControllerToPresent, animated: flag, completion: completion)
+//		print("has call present in extension viewControllerToPresent =======\(viewControllerToPresent)")
+//		HistoryViewControllerTest.handlerSetting(viewControllerToPresent)
+//	}
+//	
+//	open override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+//		super.dismiss(animated: flag, completion: completion)
+//	}
+//	
+	
 }

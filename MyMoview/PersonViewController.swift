@@ -14,7 +14,7 @@ class PersonViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 		setupView()
-		
+		view.backgroundColor = .red
 		myObseverNotice()
     }
 	
@@ -48,6 +48,23 @@ class PersonViewController: UIViewController {
 				print("close call Back str=\(str)")
 			}
 			self.view.addSubview(toast)
+		}
+		
+	}
+	
+	var can_Dismiss = false
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		
+		if can_Dismiss {
+			dismiss(animated: true) { 
+				
+			}
+		} else {
+			let presenting = presentingViewController
+			print("presenting = \(presenting)")
+			
+			present(SettingPage(), animated: true, completion: nil)
+			can_Dismiss = true
 		}
 		
 	}
